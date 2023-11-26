@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "JetBrains Mono";
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(fonts/JetBrainsMonoNerdFont-Regular.woff2) format('woff2');
+    }
+}
+
+
+/* https://www.nerdfonts.com/cheat-sheet */
+@layer utilities {
+    .font-nerd {
+        font-family: "JetBrains Mono", monospace;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+    }
+
+    .nf-fa-handshake_o:before {
+        content: "\f2b5"
+    }
+
+    .nf-md-language_rust:before {
+        content: "\f1617"
+    }
+
+    .nf-md-github:before {
+        content: "\f02a4"
+    }
+}
